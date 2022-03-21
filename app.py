@@ -16,10 +16,8 @@ def book_post():
    title_receive = request.form['title_give']
    thumbnail_receive=request.form['thumbnail_give']
 
-
    doc = {
       'title':'슬기로운'
-
    }
    db.book.insert_one(doc)
 
