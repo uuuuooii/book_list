@@ -50,6 +50,7 @@ def book_get():
     return jsonify({'book':book_list})
 
 
-
+if __name__ == '__main__':
+   app.run('0.0.0.0',port=1000,debug=True)
 
 
