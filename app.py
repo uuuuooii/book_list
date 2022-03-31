@@ -1,7 +1,5 @@
-import requests
-from bs4 import BeautifulSoup
 
-from flask import Flask,render_template,request,jsonify
+from flask import Flask, render_template, request, jsonify
 app = Flask(__name__)
 
 from pymongo import MongoClient
@@ -52,4 +50,4 @@ def book_get():
 
 
 if __name__ == '__main__':
-   app.run('0.0.0.0', port=1000, debug=True)
+   app.run('0.0.0.0', port=8001, debug=True)
